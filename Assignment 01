@@ -9,12 +9,10 @@ int main(void)
     /* Create an char type variable and assign a value*/
     char gender; 
     gender = 'M';
-
+    char name[] ="Oliver Twist";
     
     /* Print Variable */
-        printf("You are %d years old. \n", age);
-        printf("Your hourly wage is $%0.2f. This Translates into approximately $%0.2f per year. \n", hourly_wage, hourly_wage*40*52);
-        printf (" Your gender was listed as %c. \n", gender);
+        printf("Hello, my name is %s, and my gender is %c. \n I am %d years old and I make %0.2f an hour, which translates into approximately $%0.2f per year. \n  Please, Sir. I want some more \n", name, gender, age, hourly_wage, hourly_wage*40*52); 
     getchar();
     return 0;
 
