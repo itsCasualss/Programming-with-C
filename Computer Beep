@@ -1,1 +1,11 @@
+#include <stdio.h>
 
+int main()
+{
+  printf("Column A\t Column B\tColumnC");
+  printf("\n My Computer\'s beep Sounds Like This: \a! \n");
+  printf("\" Letz\bs fix that typo and then show the backslash"); 
+printf("Character \\\"shesaid. \n");
+getchar();
+return 0;
+} 
