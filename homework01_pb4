@@ -1,0 +1,51 @@
+#include <stdio.h>
+
+int main(void)
+{
+    /* Strings (words/phrases) */
+    
+    //stings defined
+    char state[]= "U.S. State of Florida";
+    char covid[]="COVID-19";
+    char MC []= "Manatee";
+    char first_cases[]= "two";
+    char HC []= "Hillsborough";
+    char jan []= "January";
+    char gov []= "Governor Ron DeSantis";
+    char sept2020[] = "September 5, 2020";
+    char US []= "United States";
+    char CA []= "California";
+    char TX []= "Texas";
+    char LA []= "Louisiana";
+
+// integers defined
+	int ppl = 171;
+	int report  = 3773;
+	int case1 = 636653;
+	int case2 = 11811;
+	
+// doubles for calculating the Fatality Rate and the times folded part
+	double fatality_rate = (double)case2 / (double)case1 * 100;
+ 	double fold = 631040.0 / 56830.0;
+// CDC as 3 Chararacter Variables
+	char c1 = 'C', c2 = 'D', c3 = 'C' ;
+
+//
+
+//paragraph one
+    printf("On March, 1, 2020, the %s officially reported its first %s %s cases, in %s and %s counties. \n\n\n", state, first_cases, covid, MC, HC);
+//next paragraph
+	printf("However, there is evidence that the community spread of %s began in Florida much earlier, perhaps as early as the first week of %s, with as many as %d people in Florida who had shown symptoms now identified with %s, prior to receiving confirmation from the Centers for Disease Control and Prevention. \n\n\n",covid, jan, ppl, covid);
+//next paragraph
+	printf("By March 11, the %c%c%c saw evidence to conclude that community spead of the virus had occurred within the state. On April 1, %s issued an executive order to restrict activities within the state to those deemed as essential services.\n\n\n ", c1, c2, c3, gov);
+//omg the next paragraph but its on the backside of the page
+	printf("On %s the Florida Department of Health reported %d positive cases increasing the cumulative totals since the beginning of the pandemic to %d cases and %d deaths (Fatality Rate : %0.1f%%) \n \n \n ", sept2020, report, case1, case2, fatality_rate);
+
+// the second to last paragraph we almost done prof J
+	printf("During the months of June, July, and August 2020 the number of %s cases in Florida increased over %0.0f - fold, from 56830 on June 1 to 631040 on September 1.", covid, fold);
+
+// its the final countdown .. i mean paragraph
+	printf("As of August 27, 2020, Florida has the third-highest number of confirmed cases in the %s after %s, %s, and the second-highest number of confirmed cases per capita after %s. It has the fifth-highest count of deaths related to the virus, and sixteeth-highest count per captita.", US, CA, TX, LA);
+	getchar();
+    return 0;
+}
