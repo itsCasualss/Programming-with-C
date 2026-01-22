@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+int main(void)
+{
+int n1, n2; 
+n1 = 1; 
+n2 = 1;
+printf("At first, n1 is %d and n2 is %d," n1, n2); 
+
+getchar();
+return 0;
+}
