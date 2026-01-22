@@ -1,0 +1,33 @@
+#include <stdio.h>
+
+int main(void)
+{
+    int timediff; // Time difference b/w Tampa and USF 
+    timediff=0; 
+  
+    //
+    char name[]="Austin";
+    char city[]= "Tampa";
+    char current_location[]= "University of South Florida";
+    char reason[]= "to add to my skillset";
+   //Print Variable 
+        printf(
+    "Hello.\n"
+    "My name is %s.\n\n"
+    "I am from %s, and I am currently at %s. "
+    "There is %d hour difference between %s and %s.\n\n"
+    "I want to learn programming %s\n",
+    name,
+    city,
+    current_location,
+    timediff,
+    city,
+    current_location,
+    reason
+);
+    getchar();
+    return 0;
+
+    
+    
+} 
