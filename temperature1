@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main(void)
+
+{
+float temp_c1, temp_c2, temp_f; // Farenheight and C: Celcius
+
+// listing conversions
+temp_f = 451.0;
+temp_c1 = (temp_f -32)* 5.0/9.0;
+temp_c2 = (temp_f -32) * (5.0/9.0);
+
+//printing 
+
+printf("%0.1f degrees Fahrenheit is %0.1f degrees Celcius. \n", temp_f, temp_c1);
+printf("When I pit Parenthesis over 5.0/9.0 I got this result %0.1f \n \n which is equivalent to the previous result\n", temp_c2);
+printf("Does the number 451 ring a bell? \n);
+
+
+getchar();
+return 0;
+}
