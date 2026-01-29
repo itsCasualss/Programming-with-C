@@ -1,0 +1,10 @@
+#include<stdio.h>
+int main()
+{
+  int exam_1 = 83, exam_2=91, exam_3=95;
+int average = (exam_1+exam_2+exam_3+1.5)/3; // adding 1.5 in the numberator rounds to the nearest whole number whan compiled
+printf("Your Exam 1 grade is %d, Exam 2 grade is %d, Exam 3 grade is %d\n", exam_1,exam_2,exam_3);
+printf("Your Average is %d. \n", average);
+getchar();
+return 0; // including my name in here so you dont think i stole a screen snip -> Austin Petit
+}
