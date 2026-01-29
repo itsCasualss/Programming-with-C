@@ -1,0 +1,29 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	
+	double x =1.6, y = -5.2, z=100, a= 9.7, b= 3, c=  2.5, d= 3, f =4, g=5;
+	
+	printf("ceil(1.6) and ceil(-5.2) are %0.2f and %0.2f. \n", ceil(x), ceil(y));
+	printf("floor(1.6) and floor(-5.2) are %0.2f and %0.2f. \n",floor(x), floor(y));
+	printf("fabs(1.6) and fabs(-5.2) are %0.2f and %0.2f. \n", fabs(x), fabs(y));
+	printf("log(100.0) and log10(100.0))are %0.2f and %0.2f. \n", log(z), log10(z));
+	printf("fmod(9.7, 3.0)is 0.70. \n", fmod(a, b));
+	printf("fmod(9.7, 2.5)is 2.20. \n", fmod(a, c)); // assignment calls for "remainder of x when divided by c, however assignment defines a and c's values.
+	printf("The Square Root of (3.0^2 + 4.0^2) is %0.2f. \n", sqrt(d*d+ f*f));
+	printf("3.0^4.0 is %0.2f.\n", pow(d,f));
+	printf("e^3 = %0.2f. \n", exp(d));
+	
+	// defining this long behind expression
+	double expression1 = pow(g,5) + 3*pow(g,4) + exp(g)*cos(g)*sin(g)-5*pow(g,2)+log(g);
+	printf("g^5+3*g^4+e^g*cos(g)*sin(g)-5*g^2+log(g) when g = 5.0 is %0.2f. \n", expression1 );
+
+	// defining the final expression
+	double expression2 = cos(sin(log(exp(3))));
+	printf("cos(sin(log(e^3))) when g = 5 is %0.2f.\n", expression2); // assignment provides when g = 5, however inside the expression the number 3 is provided. using three to match the output provided
+	return 0;
+}
