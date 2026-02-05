@@ -26,9 +26,7 @@ else{
 getchar();
 return 0;
  } 
-
-//////////////////////////////////////////////////////////
-
+_____________________
 #include <stdio.h>
 
 int main(void)
@@ -51,9 +49,7 @@ else{
 getchar();
 return 0;
  } 
-
-
-/////////////////////////////////////////////////
+_________________________
 
 // ~~ Determining if an integer multiple ~~ 
 
@@ -102,8 +98,39 @@ else
 getchar();
 return 0;
  } 
+__________________________
+Day of the Week Exercise: 
+
+/* Assignment Instructions:
 
 
+*/ 
+#include <stdio.h>
+#include <string.h>
 
+int main(void)
+{
+    char day[] = "Monday";
 
-/////////////////////////////
+    if (strcmp(day, "Monday") == 0)
+        printf("Dang, I have Jeong's class!");
+    else if (strcmp(day, "Tuesday") == 0)
+        printf("Nice, I have Dr. Castellanos's class!");
+    else if (strcmp(day, "Wednesday") == 0)
+        printf("My God, I have Jeong's Midweek Report!");
+    else if (strcmp(day, "Thursday") == 0)
+        printf("Nice, I have Dr. Ferekides' class!");
+    else if (strcmp(day, "Friday") == 0)
+        printf("Nice, it is almost weekend!");
+    else if (strcmp(day, "Saturday") == 0)
+        printf("Yes, this Gentleman deserves a day off!");
+    else if (strcmp(day, "Sunday") == 0)
+        printf("Oh, NO! Did I complete the homework?");
+    else
+        printf("Invalid day, verify case please");
+
+    getchar();
+    return 0;
+}
+
+__________________________
