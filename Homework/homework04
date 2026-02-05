@@ -1,0 +1,28 @@
+// if and Else for a vowel or constant input
+
+#include <stdio.h>
+
+int main(void)
+{    
+
+// integers defined
+
+char Letter= 'A'; 
+
+// start print 
+
+
+
+if(Letter=='A'|| Letter=='E'|| Letter=='I' || Letter=='O' || Letter=='U' ||
+Letter=='a'|| Letter=='e'|| Letter=='i' || Letter=='o' || Letter=='u') // included Lower cases 
+{
+	
+	
+  printf("Your Character is a Vowel.\n");
+  }
+else{
+  printf("Your Character is a Consonant");
+  }
+getchar();
+return 0;
+ } 
