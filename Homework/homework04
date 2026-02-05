@@ -134,3 +134,24 @@ int main(void)
 }
 
 __________________________
+// Num Differnce using if/else ; number must be positive.
+#include <stdio.h>
+
+int main(void)
+{
+    int Num1 = 90;
+    int Num2 = 100;
+    int difference;
+
+    if (Num1 >= Num2) // num 1 is bigger 
+        difference = Num1 - Num2;
+    else // num 2 is bigger 
+        difference = Num2 - Num1;
+
+    printf("Num1 = %d and Num2 = %d. Difference is %d.\n",
+           Num1, Num2, difference);
+
+    return 0;
+}
+
+
