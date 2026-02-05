@@ -55,6 +55,53 @@ return 0;
 
 /////////////////////////////////////////////////
 
+// ~~ Determining if an integer multiple ~~ 
+
+#include <stdio.h>
+
+int main(void)
+{    
+
+
+// Variables Below §
+int(Number) = 9;
+
+//If Else Statements 
+// multiples of 3, 5, 7, 8, 11
+if(Number % 3 == 0){
+  printf("Your Number is a Multiple of 3!");
+  }
+else if(Number % 5 == 0)
+{
+	printf("Your Number is a Multiple of 5!"); 
+}
+
+else if(Number % 7 == 0)
+{
+	printf("Your Number is a Multiple of 7!");	
+}
+else if(Number % 5 == 0)
+{
+	printf("Your Number is a Multiple of 8!");	
+}
+else if(Number % 11 == 0)
+{
+	printf("Your Number is a Multiple of 11!");
+}
+
+// If not a multiple of the above, or as above so below
+
+else
+{
+	printf("Your Number isn't a Multiple of 3, 5, 7, 8, or 11.");	
+}
+
+
+
+
+getchar();
+return 0;
+ } 
 
 
 
