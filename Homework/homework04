@@ -26,3 +26,37 @@ else{
 getchar();
 return 0;
  } 
+
+//////////////////////////////////////////////////////////
+
+#include <stdio.h>
+
+int main(void)
+{    
+
+int(Number) = 1;
+
+
+if(Number>=1){
+  printf("Your Number is a Positive Number");
+  }
+else if(Number==0)
+{
+	printf("Your Number is Zero, and is neither Negative or Positive."); // Just defined zero because I didnt like not including it, with whole numbers only code checks fine. 
+  }
+
+else{
+	printf("Your Number is a Negative Number");
+}
+getchar();
+return 0;
+ } 
+
+
+/////////////////////////////////////////////////
+
+
+
+
+
+/////////////////////////////
