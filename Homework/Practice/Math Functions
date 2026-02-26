@@ -1,0 +1,63 @@
+#include <stdio.h>
+#include <math.h>
+
+//Mad Libs
+
+int main(){
+
+
+	// Square Root
+	int x = 64;	
+	x = sqrt(x);	 
+	printf("x = %d", x);
+	
+	// Power // Exponents
+	int y = 2;
+	y = pow(y, 4);
+	printf("\ny = %d",y);
+
+	//Rounding
+	float z = 3.14;
+	z = round(z);
+	printf("\nz = %0.2f", z);
+	
+	//Rounding Up -- ceil
+	float i = 3.1415;
+	i = ceil(i);
+	printf("\ni = %0.2f", i);
+	
+	//Rounding Down -- floor
+	float j = 3.1415;
+	j = floor(j);
+	printf("\nj = %0.2f", j);
+	
+	//Absolute Value
+	int k = -3;
+	k = abs(k);
+	printf("\nk = %d", k);
+	
+	// Logarithims
+	float l = 3; 
+	l = log(l);
+	printf("\nl = %0.2f",l);
+	
+	//Trigonometric Functions
+	
+	float m = 45; 
+	m = sin(m); // Sin(x)
+	printf("\nm = %0.2f", m);
+	
+	float n = 45; 
+	n = cos(n); // Cos(x)
+	printf("\nn = %0.2f", n);
+	
+	float o = 45;
+	o = tan(o); // Tan(x) 
+	printf("\no = %0.2f", o);
+	
+	//Inverses are calculated the same, just input asin acos or atan
+	
+	return 0;
+}
+
+
