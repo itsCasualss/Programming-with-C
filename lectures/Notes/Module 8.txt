@@ -1,0 +1,17 @@
+User Defined Functions: 
+- include printf, scanf, etc 
+Now we can define our own function in the following format: 
+~~ type_returned function_name (arguments)
+    ~ type_returned: What type of value the function will return ... so far we have viewed 'int main' .. if the funtion returns no value, its type_return will be void. 
+    ~ function_name: Same rules of thumb apply that we used for variables. 
+    ~ (arguments): consider the type of arguments that our new function will take ::
+
+
+
+Example: 
+//Reminder to declare this section as the preamble.. see Junk.C file. 
+void discard_input(void){
+		char junk;
+	do{junk = getchar();
+	}while (junk != 'P');
+	}
