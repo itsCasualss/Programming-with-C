@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <string.h>
+
+
+int main(){
+
+
+int age = 0; 
+float gpa = 0.0f; 
+char grade = '\0'; //null character for zero 
+char name[30] = "" ; 
+
+printf("Enter Your Age\n");
+scanf(" %d", &age); //& here = address of operator 
+
+printf("Enter Your GPA:\n");
+scanf(" %f", &gpa);
+
+printf("Enter your Grade:\n");
+scanf(" %c", &grade); //scanf tip: add a space after first quotation to not cause an input buffer.
+
+
+getchar(); //clear inputbuffer
+printf("Enter your Full Name:\n"); // scanf doesnt read spaces ... so we use fgets(variable, size, stdin)
+fgets(name, sizeof(name), stdin); //sizeof here calls for the size of the 
+name[strlen(name) - 1] = '\0'; // removes the input buffer for the \n, replaces with Austin Petit \0 .. 
+
+printf("%s\n", name); 
+printf("%d\n", age);
+printf("%0.2f\n", gpa);
+printf("%c\n", grade);
+
+
+	return 0;
+}
+
+
