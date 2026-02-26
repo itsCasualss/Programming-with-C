@@ -1,0 +1,21 @@
+#include <stdio.h>
+#include <stdbool.h>     // CRITICAL TO INCLUDE THIS
+
+
+
+
+int main(){
+
+bool isStudent = 0;  // true = 1 and false = 2
+	
+	if(isStudent){
+		printf("You are a student"); 
+		}
+		else{
+		printf("You are NOT a student");
+		}
+
+	return 0;
+}
+ 
+
