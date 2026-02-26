@@ -2,6 +2,8 @@
 #include <string.h>
 
 
+//Pay attention to the Header Files, and fgets and name functions for the full name area.
+
 int main(){
 
 
