@@ -1,0 +1,43 @@
+#include <stdio.h>
+
+//switches - alternative to using many if-else statements, more eff w/ fixed values
+
+int main(){
+	
+	char dayOfWeek = '\0'; 
+	printf("Enter a Day of the Week (M, T, W, R, F, S, U): ");
+	scanf("%c", &dayOfWeek);
+	
+	
+	switch(dayOfWeek){
+		case 'M': 
+			printf("It is Monday");
+			break;							////Make sure we include the break statements, if no break statement then the cases will continue til switch is over. 
+		case 'T':
+			printf("It is Tuesday");
+			break; 
+		case 'W':
+			printf("It is Wednesday");
+			break;
+		case 'R':
+			printf("It is Thursday");
+			break;
+		case 'F':
+			printf("It is Friday");
+			break;
+		case 'S':
+			printf("It is Saturday");
+			break;
+		case 'U':
+			printf("It is Sunday");
+			break;
+		default:
+			printf("Please only enter a letter value (M, T, W, R, F, S, U)");
+	
+	
+	
+	}
+
+	return 0;
+}
+
