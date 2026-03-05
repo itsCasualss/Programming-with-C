@@ -1,0 +1,63 @@
+#include <stdlib.h>
+#include <stdio.h>
+#include <math.h>
+
+int main(void) {
+    int numofs;
+    
+    printf("Enter number of students(1-100):");
+    scanf("%d", &numofs);
+    
+    float grades[numofs];
+    int pass = 0;
+    int fail = 0;
+    float allgrades = 0;
+    
+    printf("Now enter the grade for each student(0-100)... \n\n");
+    for(int i = 0; i < numofs; i++){
+        printf("Student %d:", i + 1);
+        scanf("%f", &grades[i]);
+        allgrades = allgrades + grades[i];
+        
+    }
+    
+    for(int a = 0; a < numofs; a++){
+        if(grades[a] > 59){
+            pass = pass + 1;
+        }else
+            fail = fail + 1;
+    }
+    
+    float all = numofs;
+    float avg = allgrades/all;
+    
+    float dummy;
+    
+    for(int i = 0; i < numofs; i++){
+        for(int j = 0; j < numofs - 1; j++)
+       if (grades[j] >= grades[j+1]){
+                dummy = grades[j];
+                grades[j] = grades[j+1];
+                grades[j+1] = dummy;
+        }
+    }
+   
+    float stand;
+    float sum = 0;
+    
+    for(int n = 0; n < numofs; n++){
+        stand = pow((grades[n] - avg), 2);
+        sum = sum + stand;
+    }
+   
+    float standarddev = sqrt(sum/all);
+    
+    
+    printf("\n\nNumber of students passed: %d \nNumber of students failed: %d \n", pass, fail);
+    printf("Highest score: %.f\n", grades[numofs - 1]);
+    printf("Lowest score: %.f\n", grades[0]);
+    printf("Average(mean) score: %.2f\n", avg);
+    printf ("Standard deviation: %.2f\n", standarddev);
+    
+    return 0;
+}
