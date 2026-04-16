@@ -6,3 +6,5 @@ x = malloc(memsize)
 free (x);
 
 Every call to malloc() must be balanced by a call to free(). a missing or double free() call is considered a bug (a missing free() statement creates a memory leak)
+
+After freeing the pointer, the pointer should be set to NULL as an extra precaution.
